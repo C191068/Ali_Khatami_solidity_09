@@ -61,7 +61,7 @@ Remix ethereum is smart enogh to know that ```@chainlink/contracts/``` is referr
 ![f55](https://user-images.githubusercontent.com/89090776/235946346-0e8e022e-3766-449f-adc2-fdafa62c550c.jpg)
 Figure1: If we search it on google by typing '@chainlink/contracts' we can find it.<br>
 
-
+NPM package is  apckage manager and keep versions and keep versions of different contracts for us to directly import into our code bases
 
 
 
