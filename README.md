@@ -54,6 +54,8 @@ contract akrkFundMe  {
 
 In the above code instead of directly adding the code we can import directly from github or what is called an NPM package <br>
 
+Remix ethereum is smart enogh to know that ```@chainlink/contracts/``` is referring NPM package @chainlink/contracts/
+
 
 
 
