@@ -129,6 +129,8 @@ This price gonna be the price of Eth in terms of USD
 
 In the above code at this line ```require(msg.value >= minimumUSD , "Not send enough");``` the  ```msg.value``` have 18 decimels<br>\
 because 1 ether equals to 1000000000000000000 Wei where there are about 18 zeroes after the first digit '1'<br>
+but price have only 8 zeroes after the decimel place , to match both of them we have to write the code in the following way<br>
+
 
 
 
