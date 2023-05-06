@@ -127,5 +127,10 @@ Here price type is ```int256``` instead of ```uint256``` because some price coul
 This price gonna be the price of Eth in terms of USD
 
 
+In the above code at this line ```require(msg.value >= minimumUSD , "Not send enough");``` the  ```msg.value``` have 18 decimels<br>\
+because 1 ether equals to 1000000000000000000 Wei where there are about 18 zeroes after the first digit '1'<br>
+
+
+
 
 
