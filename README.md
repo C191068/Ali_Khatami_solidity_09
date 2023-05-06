@@ -138,6 +138,10 @@ but price have only 8 zeroes after the decimel place , to match both of them we 
 ![f59](https://user-images.githubusercontent.com/89090776/236629221-b1e48487-1b24-4adc-96d1-d0dc6ea0782a.jpg)
 Figure5: this code ```return price * 1e10; ``` will match them both
 
+Another thing we can see in the code that ```msg.value``` is of data type uint256, but price is of data type int256<br>
+so to make the data type of price from ```int256``` to ```uint256``` we have to do typecasting in the following way<br>
+
+
 
 
 
