@@ -113,6 +113,9 @@ interface AggregatorV3Interface {
 ```latestRoundData()``` function does not return a single variable but a whole bunch of different variables
 
 
+![f57](https://user-images.githubusercontent.com/89090776/236627807-35bfac06-fefa-4552-ac46-aad61777330a.jpg)
+figure3: and that is what we are going to return to our contrat<br>
+
 
 
 
