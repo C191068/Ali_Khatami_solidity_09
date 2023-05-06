@@ -1,4 +1,5 @@
 
+
 ## Ali_Khatami_solidity_09(learning from the video of Patrick Collins)
 ### Importing from Github and NPM
 
@@ -134,6 +135,8 @@ because 1 ether equals to 1000000000000000000 Wei where there are about 18 zeroe
 but price have only 8 zeroes after the decimel place , to match both of them we have to write the code in the following way<br>
 
 
+![f59](https://user-images.githubusercontent.com/89090776/236629221-b1e48487-1b24-4adc-96d1-d0dc6ea0782a.jpg)
+Figure5: this code ```return price * 1e10; ``` will match them both
 
 
 
