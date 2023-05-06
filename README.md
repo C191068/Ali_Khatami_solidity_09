@@ -1,3 +1,4 @@
+
 ## Ali_Khatami_solidity_09(learning from the video of Patrick Collins)
 ### Importing from Github and NPM
 
@@ -116,6 +117,9 @@ interface AggregatorV3Interface {
 ![f57](https://user-images.githubusercontent.com/89090776/236627807-35bfac06-fefa-4552-ac46-aad61777330a.jpg)
 figure3: and that is what we are going to return to our contrat<br>
 
+
+![f58](https://user-images.githubusercontent.com/89090776/236627978-0f647739-6580-4021-9594-6d216cf0ad5b.jpg)
+Figure4: We just only need the ```int price``` and remove others except the commas<br>
 
 
 
