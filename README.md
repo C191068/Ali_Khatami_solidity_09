@@ -39,6 +39,8 @@ contract akrkFundMe  {
         //below we will call latestRoundData() function of AggregatorV3Interface on price feed
         (, int price, , , )=priceFeed.latestRoundData();
 
+        return price * 1e10; 
+
         
     }
 
