@@ -67,6 +67,51 @@ NPM package is  apckage manager and keep versions and keep versions of different
 Figure2:@chainlink/contracts is created directly from Chainlink Github reposatory<br>
 
 
+### Floating point Math in solidity
+
+give in ths code below from github that in AggregatorV3Interface.sol
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+interface AggregatorV3Interface {
+  function decimals() external view returns (uint8);
+
+  function description() external view returns (string memory);
+
+  function version() external view returns (uint256);
+
+  function getRoundData(uint80 _roundId)
+    external
+    view
+    returns (
+      uint80 roundId,
+      int256 answer,
+      uint256 startedAt,
+      uint256 updatedAt,
+      uint80 answeredInRound
+    );
+
+  function latestRoundData()
+    external
+    view
+    returns (
+      uint80 roundId,
+      int256 answer,
+      uint256 startedAt,
+      uint256 updatedAt,
+      uint80 answeredInRound
+    );
+}
+
+```
+
+
+```latestRoundData()``` function does not return a single variable but a whole bunch of different variables
+
+
+
 
 
 
