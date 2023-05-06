@@ -34,7 +34,10 @@ contract akrkFundMe  {
         //ABI
         //Address 0x694AA1769357215DE4FAC081bf1f309aDC325306\
         // below we we create AggregatorV3Interface object called priceFeed equal to AggregatorV3Interface contract at address 0x694AA1769357215DE4FAC081bf1f309aDC325306
+        // this address 0x694AA1769357215DE4FAC081bf1f309aDC325306 will have all the functinality at AggregatorV3Interface
         AggregatorV3Interface priceFeed = AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306)
+        //below we will call latestRoundData() function of AggregatorV3Interface on price feed
+        (, int price, , , )=priceFeed.latestRoundData();
 
         
     }
