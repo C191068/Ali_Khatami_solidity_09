@@ -124,8 +124,7 @@ figure3: and that is what we are going to return to our contrat<br>
 ![f58](https://user-images.githubusercontent.com/89090776/236627978-0f647739-6580-4021-9594-6d216cf0ad5b.jpg)
 Figure4: We just only need the ```int price``` and remove others except the commas<br>
 Here price type is ```int256``` instead of ```uint256``` because some price could be negative<br>
-
-
+This price gonna be the price of Eth in terms of USD
 
 
 
