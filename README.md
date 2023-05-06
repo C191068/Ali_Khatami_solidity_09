@@ -142,6 +142,10 @@ Another thing we can see in the code that ```msg.value``` is of data type uint25
 so to make the data type of price from ```int256``` to ```uint256``` we have to do typecasting in the following way<br>
 
 
+![f60](https://user-images.githubusercontent.com/89090776/236629820-13644294-af85-402e-8614-d8f8c6c44491.jpg)
+Figure6: here we have copnverted the data type of ```int256``` to ```uint256``` and it is known as typecasting<br>
+we can't typecast all the data type but ```int256``` and ```uint256``` can be converted between the two<br>
+
 
 
 
