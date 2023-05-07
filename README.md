@@ -329,9 +329,15 @@ here we can see the current value of eth in terms of USD is ```$1,908.56```<br>
 
 here our minimum value is set to $50<br>
 
-therefore 50/1908.56 = 0.026 which is approximately enough<br>
+therefore 50/1908.56 = 0.026+0.006 = 0.032  which is approximately enough<br>
 
 
+![f66](https://user-images.githubusercontent.com/89090776/236675741-86ecaa2e-ca78-4884-b592-59f6478f7cc7.jpg)
+Figure12: We convert it to Wei going to this link ```https://eth-converter.com/```<br>
+
+
+![f67](https://user-images.githubusercontent.com/89090776/236675893-f63383fc-5109-4f3c-b64a-6770fa0b1079.jpg)
+Figure13: then we will paste the value at our contract and click the payable ```fund``` no such error shown rather metamask window pops up<br>
 
 
 
