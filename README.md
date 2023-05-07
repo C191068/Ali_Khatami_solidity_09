@@ -219,10 +219,18 @@ contract akrkFundMe  {
 }
 
 ```
+here we have done a math below to understand the above code easily
+
+
+let ethPrice be ```3000_000000000000000000``` which is $3000 and ethAmount be ```1_000000000000000000``` which is 1Eth<br>
+
+therefore, uint256 ethAmountInUSD= (3000000000000000000000 *  1_000000000000000000) = 3000_000000000000000000 which is $3000<br>
 
 
 
-we have another change in the code to perfectly convert msg.value from etherium to terms of dollars
+
+
+we have another change in the code to perfectly convert msg.value from etherium to terms of dollars<br>
 
 
 ```
