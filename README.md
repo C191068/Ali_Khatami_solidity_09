@@ -308,6 +308,9 @@ contract akrkFundMe  {
 1e18 is also known as 1 time 10 raise the 18(1 * 10 ** 18)
 
 
+![f61](https://user-images.githubusercontent.com/89090776/236674218-9284389c-14c4-40a8-b3dc-f633cd99784c.jpg)
+Figure7: after we click the deploy button it metamask window pop up and shows the value of transaction<br>
+
 
 
 
