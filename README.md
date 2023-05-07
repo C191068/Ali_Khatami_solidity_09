@@ -320,7 +320,8 @@ Figure9: this is our deployed contract<br>
 
 ![f64](https://user-images.githubusercontent.com/89090776/236675009-9da4488d-aeaf-4db8-b0fb-e9c8d5d7afcc.jpg)
 
-Figure10: When we hit payable red color ```fund``` button the above error message shows<br>
+Figure10: When we hit payable red color ```fund``` button the above error message shows because the value is here ```0 wei```<br>
+and it comes due to this line of code ```require(getConversionRate(msg.value) >= minimumUSD , "Not send enough");``` <br>
 
 
 
