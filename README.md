@@ -327,6 +327,10 @@ and it comes due to this line of code ```require(getConversionRate(msg.value) >=
 Figure11: to set the value at first we have to go this link ```https://data.chain.link/ethereum/mainnet/crypto-usd/eth-usd``` <br>
 here we can see the current value of eth in terms of USD is ```$1,908.56```<br>
 
+here our minimum value is set to $50<br>
+
+therefore 50/1908.56 = 0.026 which is approximately enough<br>
+
 
 
 
