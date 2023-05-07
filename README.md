@@ -231,6 +231,10 @@ Let the ethPrice be ```$3000``` with additional 18 zeros for matching the Wei un
 
 we also send 1Eth as a ethAmount which is 1_000000000000000000 into this contract
 
+uint256 ethAmountInUSD = (3000_000000000000000000 *  1_000000000000000000) / 1_000000000000000000 = 3000_000000000000000000
+
+so the answer is $300
+
 
 
 
