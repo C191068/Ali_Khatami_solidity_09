@@ -314,6 +314,10 @@ Figure7: after we click the deploy button it metamask window pop up and shows th
 ![f62](https://user-images.githubusercontent.com/89090776/236674353-242a1335-e96f-4686-ad3b-8b26d0297160.jpg)
 Figure8: the transaction occured successfully<br>
 
+![f63](https://user-images.githubusercontent.com/89090776/236674864-2ac855bb-d715-401c-a026-2a02bd8b4484.jpg)
+Figure9: this is our deployed contract<br>
+
+
 
 
 
