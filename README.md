@@ -196,11 +196,12 @@ contract akrkFundMe  {
         return priceFeed.version();
 
     }
-
+//below is a function by which we gonna convert msg.value from etherium to terms of dollars
     function getConversionRate()  public {}
     
 
 }
+
 
 
 ```
