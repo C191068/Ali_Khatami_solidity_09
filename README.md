@@ -221,19 +221,80 @@ contract akrkFundMe  {
 ```
 
 
-In the above code at this line ``` uint256 ethethAmountInUSD= (ethPrice * ethAmount)/1e18;```<br>
-both ```ethprice``` and ```ethAmount``` have additional 18 decimel places if we remove ```/1e18``` from it <br>
-both of them will have additonal 36 decimel places <br>
+//SPDX-License-Identifier:MIT
 
-Let's do math like below:
+pragma solidity ^0.8.8;
 
-Let the ethPrice be ```$3000``` with additional 18 zeros for matching the Wei units so the amount will be ```3000_000000000000000000```<br>
+import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 
-we also send 1Eth as a ethAmount which is 1_000000000000000000 into this contract
+contract akrkFundMe  {
 
-uint256 ethAmountInUSD = (3000_000000000000000000 *  1_000000000000000000) / 1_000000000000000000 = 3000_000000000000000000
+    uint256 public minimumUSD=50 * 1e18; //as getConversionRate() returns 18 zeroes after decimel place
 
-so the answer is $300
+// we have use payable keyword with the function below to make it payable with any native blockchain currency
+    function fund() public payable {
+     
+     //as we want to convert msg.value to USD we made the following changes
+        require(getConversionRate(msg.value) >= minimumUSD , "Not send enough");// to get accees to the 'value' at deploy at run transaction tab
+        //1e18 is 1 ether, here the value must be greater than 1 ether
+        //require is a checker it checks whether the value is greater than 1 ether
+        // if not it is going to revert with an error messsage shown above
+
+    }// To send money. We made it public so that anybody can call it
+
+  //The function below is created so that we can get price of ethereum in terms of USD , so that we can convert msg.value to USD
+//Both functions are public because we can do whatever we want with them
+//By using the getPrice() function below we are going to interact with contract outside of our project
+
+    function getPrice() public view returns(uint256) {
+
+        //ABI
+        //Address 0x694AA1769357215DE4FAC081bf1f309aDC325306\
+        // below we we create AggregatorV3Interface object called priceFeed equal to AggregatorV3Interface contract at address 0x694AA1769357215DE4FAC081bf1f309aDC325306
+        // this address 0x694AA1769357215DE4FAC081bf1f309aDC325306 will have all the functinality at AggregatorV3Interface
+        AggregatorV3Interface priceFeed = AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306);
+        //below we will call latestRoundData() function of AggregatorV3Interface on price feed
+        (,int256 price,,,)= priceFeed.latestRoundData();
+
+        return uint256(price * 1e10); //typecasting = converting int256 to uint256
+
+        
+    }
+
+    //below we have created a new function
+
+    function getVerion() public view returns (uint256)
+    {
+        AggregatorV3Interface priceFeed = AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306); //it is of type 'AggregatorV3Interface'
+        return priceFeed.version();
+
+    }
+//below is a function by which we gonna convert msg.value from etherium to terms of dollars
+//to this function we are going to pass some ethAmount in one side
+//on the other side we gonna find how much of that ethAQmount is in terms of USD
+    function getConversionRate(uint256 ethAmount)  public view returns (uint256) {
+
+        uint256 ethPrice = getPrice(); // at first we gonna call getPrice function to get the price of ethereum
+
+        uint256 ethAmountInUSD= (ethPrice * ethAmount)/1e18;
+
+        return ethAmountInUSD;
+
+       
+
+
+
+    }
+    
+
+}
+
+
+```
+
+1e18 is also known as 1 *10**18( 1 times 10 raise the 18th)
+
+
 
 
 
