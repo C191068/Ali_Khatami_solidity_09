@@ -221,6 +221,11 @@ contract akrkFundMe  {
 ```
 
 
+
+we have another change in the code to perfectly convert msg.value from etherium to terms of dollars
+
+
+```
 //SPDX-License-Identifier:MIT
 
 pragma solidity ^0.8.8;
@@ -292,7 +297,7 @@ contract akrkFundMe  {
 
 ```
 
-1e18 is also known as 1 *10**18( 1 times 10 raise the 18th)
+1e18 is also known as 1 time 10 raise the 18(1 * 10 ** 18)
 
 
 
