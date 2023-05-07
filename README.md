@@ -36,7 +36,7 @@ contract akrkFundMe  {
         //Address 0x694AA1769357215DE4FAC081bf1f309aDC325306\
         // below we we create AggregatorV3Interface object called priceFeed equal to AggregatorV3Interface contract at address 0x694AA1769357215DE4FAC081bf1f309aDC325306
         // this address 0x694AA1769357215DE4FAC081bf1f309aDC325306 will have all the functinality at AggregatorV3Interface
-        AggregatorV3Interface priceFeed = AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306)
+        AggregatorV3Interface priceFeed = AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306);
         //below we will call latestRoundData() function of AggregatorV3Interface on price feed
         (, int price, , , )=priceFeed.latestRoundData();
 
@@ -49,7 +49,7 @@ contract akrkFundMe  {
 
     function getVerion() public view returns (uint256)
     {
-        AggregatorV3Interface priceFeed = AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306) //it is of type 'AggregatorV3Interface'
+        AggregatorV3Interface priceFeed = AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306); //it is of type 'AggregatorV3Interface'
         return priceFeed.version();
 
     }
@@ -179,9 +179,9 @@ contract akrkFundMe  {
         //Address 0x694AA1769357215DE4FAC081bf1f309aDC325306\
         // below we we create AggregatorV3Interface object called priceFeed equal to AggregatorV3Interface contract at address 0x694AA1769357215DE4FAC081bf1f309aDC325306
         // this address 0x694AA1769357215DE4FAC081bf1f309aDC325306 will have all the functinality at AggregatorV3Interface
-        AggregatorV3Interface priceFeed = AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306)
+        AggregatorV3Interface priceFeed = AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306);
         //below we will call latestRoundData() function of AggregatorV3Interface on price feed
-        (, int price, , , )=priceFeed.latestRoundData();
+        (,int256 price,,,)= priceFeed.latestRoundData();
 
         return uint256(price * 1e10); //typecasting = converting int256 to uint256
 
@@ -192,7 +192,7 @@ contract akrkFundMe  {
 
     function getVerion() public view returns (uint256)
     {
-        AggregatorV3Interface priceFeed = AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306) //it is of type 'AggregatorV3Interface'
+        AggregatorV3Interface priceFeed = AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306); //it is of type 'AggregatorV3Interface'
         return priceFeed.version();
 
     }
@@ -201,6 +201,7 @@ contract akrkFundMe  {
     
 
 }
+
 
 ```
 
