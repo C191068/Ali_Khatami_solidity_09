@@ -225,6 +225,14 @@ In the above code at this line ``` uint256 ethethAmountInUSD= (ethPrice * ethAmo
 both ```ethprice``` and ```ethAmount``` have additional 18 decimel places if we remove ```/1e18``` from it <br>
 both of them will have additonal 36 decimel places <br>
 
+Let's do math like below:
+
+Let the ethPrice be ```$3000``` with additional 18 zeros for matching the Wei units so the amount will be ```3000_000000000000000000```<br>
+
+we also send 1 
+
+
+
 
 
 
