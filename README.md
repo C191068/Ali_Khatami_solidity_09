@@ -311,6 +311,9 @@ contract akrkFundMe  {
 ![f61](https://user-images.githubusercontent.com/89090776/236674218-9284389c-14c4-40a8-b3dc-f633cd99784c.jpg)
 Figure7: after we click the deploy button it metamask window pop up and shows the value of transaction<br>
 
+![f62](https://user-images.githubusercontent.com/89090776/236674353-242a1335-e96f-4686-ad3b-8b26d0297160.jpg)
+Figure8: the transaction occured successfully<br>
+
 
 
 
