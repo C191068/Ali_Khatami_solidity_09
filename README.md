@@ -341,7 +341,8 @@ Figure13: then we will paste the value at our contract and click the payable ```
 
 
 ![f68](https://user-images.githubusercontent.com/89090776/236676163-90a10642-97dc-479e-b2dc-3467fb9ddad5.jpg)
-Figure14: thus we can see here successful transaction have occured
+Figure14: thus we can see here successful transaction have occured and our ```getConversionRate()``` function is working<br>
+
 
 
 
