@@ -201,11 +201,13 @@ contract akrkFundMe  {
 //below is a function by which we gonna convert msg.value from etherium to terms of dollars
 //to this function we are going to pass some ethAmount in one side
 //on the other side we gonna find how much of that ethAQmount is in terms of USD
-    function getConversionRate(uint256 ethAmount)  public view return (uint256) {
+    function getConversionRate(uint256 ethAmount)  public view returns (uint256) {
 
         uint256 ethPrice = getPrice(); // at first we gonna call getPrice function to get the price of ethereum
 
-        uint256 ethethAmountInUSD= (ethPrice * ethAmount)/1e18;
+        uint256 ethAmountInUSD= (ethPrice * ethAmount)/1e18;
+
+        return ethAmountInUSD;
 
        
 
@@ -215,7 +217,6 @@ contract akrkFundMe  {
     
 
 }
-
 
 ```
 
