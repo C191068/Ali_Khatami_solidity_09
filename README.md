@@ -220,6 +220,10 @@ contract akrkFundMe  {
 ```
 
 
+In the above code at this line ``` uint256 ethethAmountInUSD= (ethPrice * ethAmount)/1e18;```<br>
+both ```ethprice``` and ```ethAmount``` have additional 18 decimel places if we remove ```/1e18``` from it <br>
+both of them will have additonal 36 decimel places <br>
+
 
 
 
