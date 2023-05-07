@@ -323,6 +323,11 @@ Figure9: this is our deployed contract<br>
 Figure10: When we hit payable red color ```fund``` button the above error message shows because the value is here ```0 wei```<br>
 and it comes due to this line of code ```require(getConversionRate(msg.value) >= minimumUSD , "Not send enough");``` <br>
 
+![f65](https://user-images.githubusercontent.com/89090776/236675183-7b3a14d6-e519-4755-af57-377eec87312f.jpg)
+Figure11: to set the value at first we have to go this link ```https://data.chain.link/ethereum/mainnet/crypto-usd/eth-usd``` <br>
+here we can see the current value of eth in terms of USD is ```$1,908.56```<br>
+
+
 
 
 
