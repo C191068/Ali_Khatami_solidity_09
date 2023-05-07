@@ -148,6 +148,8 @@ we can't typecast all the data type but ```int256``` and ```uint256``` can be co
 
 By the ```getPrice()``` function of the above code we are not modifying any state and thus we have made following changes in the code<br>
 
+In solidity multiplication to be done before division<br>
+
 ```
 //SPDX-License-Identifier:MIT
 
@@ -202,6 +204,13 @@ contract akrkFundMe  {
     function getConversionRate(uint256 ethAmount)  public view return (uint256) {
 
         uint256 ethPrice = getPrice(); // at first we gonna call getPrice function to get the price of ethereum
+
+        uint256 ethethAmountInUSD= (ethPrice * ethAmount)/1e18;
+
+       
+
+
+
     }
     
 
@@ -209,6 +218,7 @@ contract akrkFundMe  {
 
 
 ```
+
 
 
 
