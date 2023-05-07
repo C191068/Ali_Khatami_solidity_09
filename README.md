@@ -229,7 +229,7 @@ Let's do math like below:
 
 Let the ethPrice be ```$3000``` with additional 18 zeros for matching the Wei units so the amount will be ```3000_000000000000000000```<br>
 
-we also send 1 
+we also send 1Eth as a ethAmount which is 1_000000000000000000 into this contract
 
 
 
